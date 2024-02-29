@@ -1,0 +1,10 @@
+<mat-card class="productCard">
+    <mat-card-header class="productCardHeader">
+        <mat-card-title class="productCardTitle">{{ product.name }}</mat-card-title>
+    </mat-card-header>
+    <img alt="{{ product.name }}" class="productImage" [src]="product.images[0].url" />
+    <mat-card-content class="productCardContent">Цена: {{ product.price }} руб.</mat-card-content>
+    <mat-card-actions class="productCardActions">
+        <button mat-button (click)="buyAction()">Купить</button>
+    </mat-card-actions>
+</mat-card>
