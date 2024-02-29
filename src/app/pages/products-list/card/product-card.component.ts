@@ -11,6 +11,6 @@ export class ProductCardComponent {
     product = productMock;
 
     buyAction() {
-        console.log('Товар добавлен в корзину');
+        console.log('Купить');
     }
 }
